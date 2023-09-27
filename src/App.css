@@ -1,10 +1,27 @@
-.App {
-  text-align: center;
+/* Reset CSS */
+body {
+  margin: 0;
+  font-family: 'Red Hat Display', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: white; /* Set the font color to white */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body, h1, h2, p {
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 400;
+  /* Add any other styles you want here */
+}
+
+/* Code styles */
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* App container styles */
+.App {
+  text-align: center;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -13,6 +30,7 @@
   }
 }
 
+/* App header styles */
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -24,10 +42,7 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
+/* Keyframes for logo animation */
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +50,34 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Centered container styles */
+.centered-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* This ensures the container takes up the full viewport height */
+  text-align: center; /* Centers text horizontally */
+  z-index: 1; /* Places the container above the background image */
+}
+
+/* White text styles */
+.white-text {
+  color: white; /* Set the font color to white */
+}
+
+/* Center the text "Raphael Rizk" vertically and horizontally in the middle of the page */
+.center-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* This ensures the text takes up the full viewport height */
+}
+
+/* Center the text "Raphael Rizk" vertically and horizontally within the centered container */
+.centered-container .center-text {
+  margin-top: 0;
+  margin-bottom: 0;
 }
